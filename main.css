@@ -1,0 +1,23 @@
+*::selection {
+    background-color: #211;
+    color: #fcc;
+}
+
+body {
+    margin: 32px;
+    background-color: rgb(255, 204, 204);
+    color: #211;
+    font-family: "Roboto Mono", monospace;
+}
+
+a {
+    text-decoration: none;
+}
+
+img:hover {
+    filter: invert(0.2);
+}
+
+img:active {
+    filter: invert(1);
+}
