@@ -38,6 +38,10 @@ img:active {
   margin: 0px;
   padding: 32px;
 }
+.invert::selection {
+  background-color: #fcc;
+  color: #211;
+}
 
 /*.invert img {
     filter: invert(1);
