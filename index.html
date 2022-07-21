@@ -1,203 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=1920, initial-scale=1.0">
-      <title>Data Overflow</title>
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@480&display=swap" rel="stylesheet">
-      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-   </head>
-   <body>
-      <div id="container">
-         <div id="about">
-            <div id="title" data-aos="fade-in" data-aos-delay="100">
-               <h3>Hey there!</h3>
-               <h1 title="Kavirajar B">I'm Data Overflow</h1>
-               <img id="hi-greeting" alt="me greeting :)" src="hiiii.gif" />
-            </div>
-            <div id="about-text" data-aos="fade-in" data-aos-delay="200">
-               <p>I'm a 19 year old Technologist and Entrepreneurial Hacker.
-                  Most of my work is focused towards humanity's progress.
-                  And when I'm not working, I'm learning of how our universe 
-                  works and about everything that could potentially make our
-                  lives better.
-               </p>
-            </div>
-         </div>
-         <br>
-         <div id="connect" data-aos="fade-in">
-            <h3 data-aos="slide-up" data-aos-delay="150">Let's Connect!</h3>
-            <div id="icons" data-aos="zoom-in" data-aos-delay="200">
-               <a title="telegram" class="item1" target="_blank" href="https://t.me/kvrjr">
-               <img src="icons/telegram.svg" alt="kvrjr" />
-               </a>
-               <a title="twitter" class="item2" target="_blank" href="https://twitter.com/kvrjr">
-               <img src="icons/twitter.svg" alt="@kvrjr" />
-               </a>
-               <a title="linkedin" class="item3" target="_blank" href="https://in.linkedin.com/in/kavirajar">
-               <img src="icons/linkedin.svg" alt="kavirajar" />
-               </a>
-               <a title="instagram" class="item4" target="_blank" href="https://instagram.com/data.overflow">
-               <img src="icons/insta.svg" />
-               </a>
-               <a title="github projects" class="item1" target="_blank" href="https://github.com/data-overflow">
-               <img src="icons/git.svg" />
-               </a> 
-               <a title="soundcloud music" target="_blank" href="https://soundcloud.com/kevin-rogers-761684103">
-               <img src="icons/sound.svg" />
-               </a>
-               <a title="itch.io games" target="_blank" href="https://dataoverflow.itch.io">
-               <img src="icons/itc.svg" />
-               </a>
-               <a title="Snapchat" target="_blank" href="https://www.snapchat.com/add/dataoverflow">
-               <img src="icons/snap.svg" alt="dataoverflow" />
-               </a>
-            </div>
-         </div>
-         <!--end of connect-->
-      </div>
-      <!--end of container-->
-      <style>
-         * {
-         font-family: 'Inter', sans-serif;
-         color: #322;
-         }
-         *::selection {
-         background-color: #211;
-         color: #fcc;
-         }
-         #hi-greeting {
-         align-items: center;
-         display: block;
-         margin: auto;
-         /*border: 3px solid green;*/
-         }
-         body {
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         padding: 8%;
-         gap: 10px;
-         position: relative;
-         background: #FFCCCC;
-         /*border: 3px solid green;*/
-         }
-         a {
-         text-decoration: none;
-         }
-         #connect a{
-         justify-content: space-around;
-         width: 100%;
-         margin: auto;
-         /*border: 3px solid green;*/
-         }
-         #connect h3 {
-         text-align: center;
-         }
-         #icons {
-         display: grid;
-         }
-         #icons a {
-         text-align: center;
-         }
-         #icons a img {
-         /*border: 3px solid red;*/
-         transform: scale(90%);
-         object-fit: cover;
-         width: 80%;
-         max-height: 80%;
-         }
-         #icons .item2 {
-         grid-column: 2;
-         }
-         #icons .item3 {
-         grid-column: 3;
-         }
-         #icons .item4 {
-         grid-column: 4;
-         }
-         @media (orientation: landscape){
-         * {
-         font-size: large;
-         }
-         body {
-         padding: 1%;
-         }
-         h3 {
-         font-size: x-large;
-         }
-         h1 {
-         font-size: xx-large;
-         }
-         #hi-greeting {
-         margin: 4%;
-         display: block;
-         }
-         #container {
-         display: flex;
-         flex-direction: row;
-         }
-         #about-text {
-         background-color: #322;
-         color: #FFCCCC; 
-         padding: 5%;
-         padding-bottom: 20%;
-         align-self: flex-start;
-         }
-         #about-text p::selection{
-         background-color: #fcc;
-         color: #211;
-         }
-         #about p {
-         background-color: #322;
-         color: #FFCCCC;
-         max-width: 80%;
-         }
-         #about {
-         margin: 2%;
-         }
-         #connect {
-         margin: 1%;
-         min-width: 40%;
-         padding-top: 128px;
-         }
-         #icons a img {
-         /*border: 3px solid red;*/
-         transform: scale(80%);
-         object-fit: cover;
-         width: 100%;
-         max-height: 100%;
-         }
-         }
-         /* Super small screens */
-         @media only screen and (max-width: 480px){
-         #icons {
-         display: flex;
-         flex-direction: column;
-         }
-         #icons a img {
-         /*border: 3px solid red;*/
-         transform: scale(50%);
-         object-fit: cover;
-         width: 50%;
-         max-height: 50%;
-         }
-         }
-         /* Extra large screens */
-         @media screen and (min-width: 1281px) and (orientation: landscape) {
-         p, h1, h3{
-         font-size: xx-large;
-         }			
-         }
-      </style>
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-      <script>
-         AOS.init();
-      </script>
-   </body>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1920, initial-scale=1.0">
+	<title>Data Overflow</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@480&display=swap" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+	
+
+	<div id="container">
+		
+		
+		<div id="about">
+			<div id="title" data-aos="fade-in" data-aos-delay="100">
+				<h3>Hey there!</h3>
+				<h1 title="Kavirajar B">I'm Data Overflow</h1>
+				<img id="hi-greeting" alt="me greeting :)" src="hiiii.gif" />
+			</div>
+
+			<div id="about-text" data-aos="fade-in" data-aos-delay="200">
+				<p>I'm a 19 year old Technologist and Entrepreneurial Hacker.
+					Most of my work is focused towards humanity's progress.
+					And when I'm not working, I'm learning of how our universe 
+					works and about everything that could potentially make our
+					lives better.
+				</p> 
+			</div>
+		</div>
+		<br>
+		<div id="connect" data-aos="fade-in">
+			<h3 data-aos="slide-up" data-aos-delay="150">Let's Connect!</h3>
+			<div id="icons" data-aos="zoom-in" data-aos-delay="200">
+				<a title="telegram" class="item1" target="_blank" href="https://t.me/kvrjr">
+					<img src="icons/telegram.svg" alt="kvrjr" />
+				</a>
+				<a title="twitter" class="item2" target="_blank" href="https://twitter.com/kvrjr">
+					<img src="icons/twitter.svg" alt="@kvrjr" />
+				</a>
+				<a title="linkedin" class="item3" target="_blank" href="https://in.linkedin.com/in/kavirajar">
+					<img src="icons/linkedin.svg" alt="kavirajar" />
+				</a>
+				<a title="instagram" class="item4" target="_blank" href="https://instagram.com/data.overflow">
+					<img src="icons/insta.svg" />
+				</a>
+				<a title="github projects" class="item1" target="_blank" href="https://github.com/data-overflow">
+					<img src="icons/git.svg" />
+				</a> 
+				<a title="soundcloud music" target="_blank" href="https://soundcloud.com/kevin-rogers-761684103">
+					<img src="icons/sound.svg" />
+				</a>
+				<a title="itch.io games" target="_blank" href="https://dataoverflow.itch.io">
+					<img src="icons/itc.svg" />
+				</a>
+				<a title="Snapchat" target="_blank" href="https://www.snapchat.com/add/dataoverflow">
+					<img src="icons/snap.svg" alt="dataoverflow" />
+				</a>
+			</div>        
+		</div><!--end of connect-->
+	</div><!--end of container-->
+		<style>
+
+			* {
+				font-family: 'Inter', sans-serif;
+				color: #322;
+				word-wrap: break-word;
+					
+			}
+			*::selection {
+ 				background-color: #211;
+  			color: #fcc;
+			}
+			#hi-greeting {
+					align-items: center;
+					display: block;
+					margin: auto;
+					/*border: 3px solid green;*/
+			}
+			body {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					padding: 8%;
+					gap: 10px;
+
+					position: relative;
+
+					background: #FFCCCC;
+					/*border: 3px solid green;*/
+			}
+			a {
+					text-decoration: none;
+			}
+			#connect a{
+					justify-content: space-around;
+					
+					width: 100%;
+					margin: auto;
+					/*border: 3px solid green;*/
+			}
+			#connect h3 {
+				text-align: center;
+			}
+			#icons {
+				display: grid;
+			}
+			#icons a {
+				text-align: center;
+			}
+			#icons a img {
+				/*border: 3px solid red;*/
+				transform: scale(90%);
+				object-fit: cover;
+				width: 80%;
+				max-height: 80%;
+
+			}
+			#icons .item2 {
+				grid-column: 2;
+			}
+			#icons .item3 {
+				grid-column: 3;
+			}
+			#icons .item4 {
+				grid-column: 4;
+			}
+			
+			@media (orientation: landscape){
+				* {
+						font-size: large;
+				}
+				body {
+					padding: 1%;
+				}
+				h3 {
+					font-size: x-large;
+				}
+				h1 {
+					font-size: xx-large;
+				}
+				#hi-greeting {
+					margin: 4%;
+					display: block;
+
+				}
+				#container {
+					display: flex;
+					flex-direction: row;
+				}
+				#about-text {
+						background-color: #322;
+						color: #FFCCCC; 
+						padding: 5%;
+						padding-bottom: 20%;
+						align-self: flex-start;
+				}
+				#about-text p::selection{
+  				background-color: #fcc;
+  				color: #211;
+				}
+				#about p {
+						background-color: #322;
+						color: #FFCCCC;
+						max-width: 80%;
+				}
+				#about {
+					margin: 2%;
+				}
+				#connect {
+					margin: 1%;
+					min-width: 40%;
+					padding-top: 128px;
+					
+				}
+				#icons a img {
+					/*border: 3px solid red;*/
+					transform: scale(80%);
+					object-fit: cover;
+					width: 100%;
+					max-height: 100%;
+
+				}
+				
+			}
+
+			/* Super small screens */
+			@media only screen and (max-width: 480px){
+				#icons {
+					display: flex;
+					flex-direction: column;
+				}
+				#icons a img {
+					/*border: 3px solid red;*/
+					transform: scale(50%);
+					object-fit: cover;
+					width: 50%;
+					max-height: 50%;
+
+				}
+			}
+
+			/* Extra large screens */
+			@media screen and (min-width: 1281px) {
+					p {
+						font-size: x-large;
+					}
+					h1, h2, h3 {
+						font-size: xx-large;
+					}
+					#hi-greeting {
+						transform: scale(2);
+					}
+			}
+				
+		</style>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
+</body>
 </html>
