@@ -3,9 +3,9 @@
   max-width: 100%;
 }
 
-#terminal {
+/* #terminal {
   height: 100vh;
-}
+} */
 
 /* glow */
 .terminal {
@@ -176,7 +176,7 @@
 
 /* turn off animation */
 .tv {
-  height: 100vh;
+  /* height: 100vh; */
   position: relative;
 }
 
@@ -224,9 +224,9 @@
   }
 }
 
-#terminal {
+/* #terminal {
   padding-bottom: 36px;
-}
+} */
 
 .collection {
   position: absolute;

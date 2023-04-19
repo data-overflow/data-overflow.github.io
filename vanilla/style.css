@@ -199,7 +199,7 @@ h1 {
 
 h2 {
     font-size: 8vw;
-    margin: 0%;
+    margin: 1%;
     text-shadow: 2px 2px 4px #000000ac;
 }
 
@@ -221,7 +221,11 @@ h2 {
     width: fit-content;
     padding: 1vh;
 }
-
+.rainbow {
+    background: linear-gradient(331deg,#0f9d58,#0f9d58,#3b71fe,#3b71fe,#db4437,#db4437,#f89b00,#f89b00,#0f9d58,#0f9d58);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
 .clip {
     background: url("./assets/glitch-light.gif");
     background-clip: text;
@@ -267,7 +271,39 @@ h2 {
     background-size: cover;
     background-position-x: 80%;
 }
+#connect {
+    background-color: var(--primary-color);
+}
+#connect a.hover-underline-animation:after {
+    background-color: #111;
+}
+#icons {
+    display: grid;
+}
+#icons a {
+    text-align: center;
+}
+#icons a img {
+    /*border: 3px solid red;*/
+    transform: scale(90%);
+    object-fit:contain;
+    width: 80%;
+    max-height: 80%;
 
+}
+#icons .item2 {
+    grid-column: 2;
+}
+#icons .item3 {
+    grid-column: 3;
+}
+#icons .item4 {
+    grid-column: 4;
+}
+/* .terminal {
+    position: absolute;
+    width: 0%;
+} */
 @media screen and (min-width: 640px) {
     #home {
         height: 80vh;
@@ -322,7 +358,7 @@ h2 {
     }
     .float-left {
         /* position: relative; */
-        width: max-content;
+        width:fit-content;
         float: left;
     }
     .float-right {

@@ -16,7 +16,7 @@ $('#nav-icon').click(function() {
 })
 
 $('#navigation ul li a').click(function() {
-    console.log("fuck your ass");
+    // console.log("fuck your ass");
     navigation.classList.toggle('hide');
     $('#nav-icon').toggleClass('open');
 })
