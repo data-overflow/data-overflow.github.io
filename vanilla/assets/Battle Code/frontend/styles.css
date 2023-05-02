@@ -1,0 +1,75 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+@font-face {
+    font-family: logo;
+    src: url("./fonts/Quantum.otf");
+  }
+html{
+    background-image: linear-gradient(rgb(116, 116, 116), rgb(21, 21, 21));
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    background-image: linear-gradient(black, rgb(35, 35, 35));
+    min-height: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo-text{
+    padding: 20px;
+    color: yellow;
+    font-family: logo;
+}
+.content-container{
+    justify-content: center;
+    align-items: center;
+}
+.content-heading{
+    color: #ffff;
+    margin: 20px;
+}
+pre{
+    background-color: #ffff;
+    color: rgb(0, 0, 93);
+    padding: 10px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 2%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-weight: 600;
+}
+.instructions{
+    padding: 10px;
+    margin: 10px;
+    background-color: #3c3c3c;
+    border-radius: 10px;
+    color: #ffff;
+}
+.bottom-container{
+    display: flex;
+    flex-direction: column;
+}
+.compiler{
+    margin-left: 10px;
+    height: 50rem;
+}
+.submitcode{
+    color: #ffff;
+    background-color: rgb(47, 178, 0);
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: none;
+    width: max-content;
+    cursor: pointer;
+}
+.submitcode:hover{
+    background-color: rgb(28, 105, 0);
+    transition: 500ms;
+}
