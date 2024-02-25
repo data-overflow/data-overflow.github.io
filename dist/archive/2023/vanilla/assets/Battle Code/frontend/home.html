@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>T.A.L.O.S</title>
+</head>
+<body >
+    <div class="back-g">
+        <header>
+            <h1 class="logo-text">T.A.L.O.S</h1>
+        </header>
+        <div class="content-container">
+            <h2 class="content-heading">ROCK-PAPER-SISSORS</h2>
+            <div>
+                <div class="instructions">
+                    <h4>
+                        The challenge is to create an AI logic for the playing the game rock-paper-sissors. Your task is to return your choice as either 0 or 1 or 2 representing "ROCK","PAPER" and "SISSORS" respectively. Just a random choice logic without any stratergies will be disqualified.<br><br>
+                        <strong>INPUT:</strong><br>
+                        a list which has the previous moves played by the opponent.
+                        A predefined list which defines the list of choices to make.<br><br>
+                        <strong>OUTPUT</strong><br>
+                        return either 0 or 1 or 2 representing "ROCK","PAPER" and "SISSORS" respectively.<br><br>
+                        <strong>NOTE:</strong><br>
+                        Code must be written only in python.
+                        Your AI can be now tested with the predefined set of moves, but during the battle it will be tested against the AI built by your opponents. So plan your stratergy accordingly!
+                    </h4>
+                </div>
+                <pre>
+<code>
+#function to implement logic
+
+def logic(prev_moves):
+    # Write your logic here
+    x = random.choices([0,1,2])
+    return x
+</code>             
+        </pre>
+        <h3 style="color:#ffff;margin-left: 10px;">Copy the code from above and paste it in the compiler given below and write your logic after the line "Write your logic here"</h3><br>
+        <div class="bottom-container">
+            <iframe src="https://www.programiz.com/python-programming/online-compiler/" height="100%" width="90%" class="compiler" ></iframe>
+            <br>
+            <h3 style="color:#ffff;margin-left: 10px;">Click the submit button to submit your code:</h3>
+            <!-- Google form link goes here -->
+            <a href="#"><button class="submitcode">Submit Code</button></a>
+        </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
