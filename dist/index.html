@@ -1,51 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/hi.gif" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>DataOverflow</title>
+    <script type="module" crossorigin src="/assets/index-186428f0.js"></script>
+    <link rel="stylesheet" href="/assets/index-ee47c1ca.css">
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/hi.gif" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <title>DataOverflow</title>
-  <script type="module" crossorigin src="/assets/index-d98d3332.js"></script>
-  <link rel="stylesheet" href="/assets/index-ab331100.css">
-</head>
+  <body>
+    <div id="app"></div>
+    
 
-<body>
-  <div id="app"></div>
-  
-
-  <div class="tv">
-    <div id="terminal"></div>
-    <div class="collection external terminal">
+    <div class="tv" id="tv">
+      <div id="terminal"></div>
+      <div class="collection external terminal"></div>
+      <div class="flicker" id="flicker"></div>
+      <div class="scanlines"></div>
+      <div id="noise" class="noise"></div>
     </div>
-    <div class="flicker"></div>
-    <div class="scanlines"></div>
-    <div id="noise" class="noise"></div>
-  </div>
 
-  <!-- Animate On Scroll Library -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Animate On Scroll Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-  <!-- Our stylesheet and script
+    <!-- Our stylesheet and script
   <link rel="stylesheet" href="./style.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="./script.js"></script> -->
 
-  <!-- Terminal Effects -->
-  <link rel="stylesheet" href="./terminal/terminal-style.css" />
-  <script src="./terminal/terminal.js"></script>
-</body>
+    <!-- Terminal Effects -->
+    <link rel="stylesheet" href="./terminal/terminal-style.css" />
+    <script src="./terminal/terminal.js"></script>
+  </body>
 
-<script>
-  //window.addEventListener('resize', function (event) {
-  if (window.innerWidth < 640) {
-    document.getElementById("noise").classList.toggle("noise");
-    console.log("noise removed!")
-  }
-  //});
-</script>
+  <script defer>
+    //window.addEventListener('resize', function (event) {
 
+    if (window.innerWidth < 640) {
+      document.getElementById("noise").classList.toggle("noise");
+      console.log("noise removed!");
+    }
+
+    //});
+  </script>
 </html>
